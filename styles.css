@@ -1,0 +1,116 @@
+html {
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    display: grid;
+}
+
+header {
+    display: grid;
+    background: black;
+}
+
+.nav-bar {
+    background: gray;
+    display: flex;
+    border-bottom: 1px solid #e2e2e2;
+    height: 36px;
+    padding: 8px 15px 3px;
+
+    position: relative;
+    /* relative vs absolute */
+}
+
+.user-links {
+    background: pink;
+    display: flex;
+    font-size: 11px;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    padding: 13px 20px 12px;
+}
+
+.article-title {
+    background: blue;
+    color: #121212;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.9375rem;
+    line-height: 2.25rem;
+    margin: 0 20px 1rem;
+    margin-bottom: 1rem;
+    width: calc(100% - 40px);
+    position: relative;
+    /* position???? */
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.main-image-container {
+    background: green;
+    position: relative;
+    /* margin: 43px auto; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.main-image {
+    height: 407.25px;
+    width: 724px;
+    /* max-width: 1200px; this was in the weird css for the pic. the html has diff :(*/
+    /* min-width: 600px; theres some weird size stuff in the html for the pic*/
+    vertical-align: top;
+    /* work w whatever display im using? */
+}
+
+.mn-img-subtitle-box {
+/* this is figcaption, so maybe i want ome styles for all of them? */
+    color: #666;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    margin: 10px 20px 0;
+    text-align: left;    
+}
+
+.mn-img-subtitle {
+    margin-right: 7px;
+    color: #666;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+
+.mn-img-subtitle-box:last-child {
+    color: #888;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    line-height: 1.125rem;
+    vertical-align: baseline;
+}
+
+
+
+.top-article-info {
+    background: indianred;
+    display: flex;
+    margin-bottom: 20px;
+    color: #121212;
+    width: calc(100% - 40px);
+    max-width: 600px;
+}
+
+/* author info */
+.top-article-info:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+/* date & share links */
+.top-article-info:last-child {
+    display: flex;
+}
+
+.article-body {
+    background: lightseagreen;
+}

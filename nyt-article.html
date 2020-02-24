@@ -2,32 +2,55 @@
 <html lang="en">
 <head>
     <title>NYT Article Copy</title>
-    <link rel="stylesheet" src="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head> 
 <body>
     <header>
-        <section class="top-bar">
-            topbar elements
-        </section>
+    <!-- grid prac. 2 sections classed as grid so be careful -->
+    <section class="nav-bar">
+        <!-- <a href="none"><img href="none" src="icons/three-line-icon.png"></a>  -->
+        <a><img href="none" src="">search logo</a>
+        topbar elements
+    </section>
+
+    <section class="user-links">
+        <!-- needs better name -->
+        <a>subscribe~~</a>
+        <a>Log in</a>
+    </section>
 
     <section class="article-title">
         Space Ripples Reveal Big Bang’s Smoking Gun
     </section>
 
-    <section>
-        image of man, <br>
-         subtitle for image
+    <section class="main-image-container">
+        <a class="main-image"><img src="https://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-articleLarge.jpg?quality=75&auto=webp&disable=upscale" 
+            srcset="https://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-articleLarge.jpg?quality=90&auto=webp 600w, https://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-jumbo.jpg?quality=90&auto=webp 1024w, 
+            https://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-superJumbo.jpg?quality=90&auto=webp 2048w"></a>
+        <figcaption class="mn-img-subtitle-box">
+            <span class="mn-img-subtitle">Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.</span>
+            <span>Rick Friedman for The New York Times</span>
+        </figcaption>
     </section>
 
-    <section>
-        author info <br>
-        date<br>
-        clickable share links
+    <section class="top-article-info">
+        <div>author</div>
+        <div>
+            <ul>
+                <li>March 17, 2014</li>
+                <li>social</li>
+            </ul></div>
     </section>
 </header>
 
-    <section>
-            article body, links on some things, pictures sprinkled
-    </section>
+
+    <div class="grid">
+        <section class="article-body">
+                article body, links on some things, pictures sprinkled
+                giant weird grid pic
+        </section>
+    </div>
+    
+    <footer></footer>
 </body>   
 </html>
