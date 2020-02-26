@@ -4,21 +4,24 @@ html {
 }
 
 header {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background: black;
 }
 
 .nav-bar {
     background: gray;
     display: flex;
+    flex-direction: row;
     border-bottom: 1px solid #e2e2e2;
     height: 36px;
     padding: 8px 15px 3px;
-
+    justify-content: space-between;
     position: relative;
     /* relative vs absolute */
 }
 
+/* i got rid of this but ... it's for the buttons? */
 .user-links {
     background: pink;
     display: flex;
@@ -27,25 +30,40 @@ header {
     padding: 13px 20px 12px;
 }
 
-.article-title {
+/* more space between box and topbar */
+/* space between title and image looks ok! */
+.article-title-box {
     background: blue;
-    color: #121212;
-    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 1.9375rem;
+    display: flex;
     line-height: 2.25rem;
     margin: 0 20px 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.65rem;
     width: calc(100% - 40px);
     position: relative;
     /* position???? */
     margin-left: 20px;
     margin-right: 20px;
-
+    align-items: center;
+    justify-content: center;
+}
+    /* font & size isnt quite right */
+/* titlw needs to wrap but it looks weird and i dont want it to */
+.article-title {
+    margin-top: 1.875rem;
+    color: #121212;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.9375rem;
+    text-align: left;
+    max-width: 383.777px;
 }
 
 .main-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: green;
     position: relative;
     /* margin: 43px auto; */
@@ -53,18 +71,50 @@ header {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+    max-width: 1200px;
 }
-
+/* not the right size also  */
 .main-image {
-    height: 407.25px;
-    width: 724px;
-    /* max-width: 1200px; this was in the weird css for the pic. the html has diff :(*/
-    /* min-width: 600px; theres some weird size stuff in the html for the pic*/
+    /* height: 407.25px; */
+    width: 900px;
+     max-width: 1200px; /*this was in the weird css for the pic. the html has diff :(*/
+     min-width: 600px; /*theres some weird size stuff in the html for the pic */
     vertical-align: top;
     /* work w whatever display im using? */
-}
+}'
+
+
+
+
+
+/* i want to make this work but LATER */
+/* @media (min-width: 1440px) {
+.main-image-container {
+    width: 1200px;
+}}
+@media (min-width: 1024px) {
+.main-image-container {
+    width: 945px;
+}}
+@media (min-width: 600px) {
+.main-image-container {
+    width: auto;
+}}
+@media (min-width: 740px) {
+.main-image-container {
+    margin-top: 25px;
+}}
+@media (min-width: 600px) {
+.main-image-container {
+    margin: 43px auto;
+}} */
 
 .mn-img-subtitle-box {
+    display: flex;
+    flex-direction: row;
+    background: rosybrown;
+    margin: 10px 20px 0;
+    align-content: flex-start;
 /* this is figcaption, so maybe i want ome styles for all of them? */
     color: #666;
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
@@ -78,6 +128,7 @@ header {
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
     font-size: 0.875rem;
     line-height: 1.125rem;
+    text-align: left;
 }
 
 .mn-img-subtitle-box:last-child {
@@ -88,10 +139,11 @@ header {
 }
 
 
-
+/* need better name for this */
 .top-article-info {
+    align-self: center;
+    display: grid;
     background: indianred;
-    display: flex;
     margin-bottom: 20px;
     color: #121212;
     width: calc(100% - 40px);
@@ -105,12 +157,24 @@ header {
     margin-bottom: 15px;
 
 }
+li {
+    list-style-type: none;
+}
 
 /* date & share links */
+/* is last child the container or ul? */
 .top-article-info:last-child {
     display: flex;
 }
 
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
 .article-body {
     background: lightseagreen;
+    align-self: center;
+    width: calc(100% - 40px);
+    max-width: 600px;
 }
