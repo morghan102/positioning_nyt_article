@@ -9,6 +9,7 @@ header {
     background: black;
 }
 
+/* can i make it sticky?? */
 .nav-bar {
     background: gray;
     display: flex;
@@ -19,6 +20,48 @@ header {
     justify-content: space-between;
     position: relative;
     /* relative vs absolute */
+}
+.three-line-icon {
+    width: 1.3rem;
+}
+.button-dissapear {
+    border: 0;
+    -webkit-clip: rect(0 0 0 0);
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.search-button {
+    /* width: 16px; */
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    -webkit-transition: ease 0.6s;
+    transition: ease 0.6s;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: transparent;
+    color: #000;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    /* -webkit-letter-spacing: 0.02em;
+    -moz-letter-spacing: 0.02em;
+    -ms-letter-spacing: 0.02em; */
+    letter-spacing: 0.02em;
+    padding: 11px 12px 8px;
+    border: 0;
+    -webkit-appearance: button;
+}
+.search-button svg {
+    display: inline-block;
+    height: 16px;
+    vertical-align: sub;
+    width: 16px;
 }
 
 /* i got rid of this but ... it's for the buttons? */
@@ -81,7 +124,7 @@ header {
      min-width: 600px; /*theres some weird size stuff in the html for the pic */
     vertical-align: top;
     /* work w whatever display im using? */
-}'
+}
 
 
 
@@ -187,7 +230,55 @@ li {
     flex-direction: column;
     background: pink;
 }
+
+.nav-elements-box header {
+    height: 44px;
+    justify-content: center;
+    align-content: center;
+    width: 184px;
+    background: none;
+}
 .nav-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* can set this to like repeat 1fr 6x */
+    font-size: 14px;
+}
+.nav-content h3 {
+    /* need to line this up w the li's below */
+    text-transform: uppercase;
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: nyt-franklin;
+    height: 25px;
+    line-height: 15px;
+    width: 150px;
+}
+.nav-content li {
+    font-family: nyt-franklin;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+.footer-box {
+    display: flex;
+    flex-direction: row;
+}
+.footer-box ul {
+    display: flex;
+    font-size: 11px;
+}
+
+.footer-box a {
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    /* this isnt working */
+    /* !!!!!!!! */
 }
