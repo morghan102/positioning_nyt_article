@@ -178,3 +178,16 @@ li {
     width: calc(100% - 40px);
     max-width: 600px;
 }
+
+
+
+/* header is being styled for this, watch that */
+.nav-elements-box {
+    display: flex;
+    flex-direction: column;
+    background: pink;
+}
+.nav-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
