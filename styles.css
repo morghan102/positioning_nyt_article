@@ -342,6 +342,7 @@ li {
 .grid {
     display: flex;
     flex-direction: column;
+    color: #333;
 }
 .article-body {
     /* background: lightseagreen; */
@@ -354,11 +355,38 @@ li {
 .article-body p {
     margin-bottom: 0.78125rem;
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;   
+    font-size: 20px;
+    line-height: 1.5625rem; 
+    margin-top: 0;
 }
 
 
+
+.log-in-ad {
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+}
+.log-in-line {
+    width: 75px;
+}
+.log-in-ad hr:first-of-type {
+    margin-bottom: 18px;
+}
+.log-in-ad hr:last-of-type {
+    margin-top: 18px;
+}
+.log-in-ad p, .log-in-ad a {
+text-align: center;
+font-weight: 700;
+font-size: 15px;
+line-height: 19px;
+margin-bottom: 0
+}
+.log-in-ad a {
+    color: rgb(50, 104, 145);
+    text-decoration: none;
+}
 
 
 /* .diagram {
@@ -378,7 +406,6 @@ li {
     height: 754px;
     margin-top: 1620px;
     margin-left: -200px;
-}
 }
 .diagram div ul {
     display: grid;
