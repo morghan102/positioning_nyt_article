@@ -159,7 +159,7 @@ header {
     /* margin: 43px auto; */
     margin-block-start: 1em;
     margin-block-end: 1em;
-    /* margin-inline-start: 40px; */
+    margin-inline-start: 40px;
     margin-inline-end: 40px;
     max-width: 1200px;
 }
@@ -336,6 +336,9 @@ li {
     right: 9px;
 }
 
+
+
+
 .grid {
     display: flex;
     flex-direction: column;
@@ -345,15 +348,97 @@ li {
     align-self: center;
     width: calc(100% - 40px);
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 .article-body p {
     margin-bottom: 0.78125rem;
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
     font-size: 1.125rem;
-    line-height: 1.5625rem;
-    
+    line-height: 1.5625rem;   
 }
 
+
+
+
+/* .diagram {
+    display: flex;
+    flex-direction: column;
+    width: .75vw;
+    position: absolute;
+    height: 754px;
+    margin-left: -290px;
+} */
+
+.diagram {
+    display: flex;
+    flex-direction: column;
+    width: .75vw;
+    position: absolute;
+    height: 754px;
+    margin-top: 1620px;
+    margin-left: -200px;
+}
+}
+.diagram div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 228px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 79px;
+    grid-row-gap: 100px;
+    position: relative;
+    margin-top: -46.5%;
+    padding: 0;
+}
+.diagram header {
+    width: 1000px;
+}
+.diagram header h1 {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+    margin-bottom: 2px;
+}
+.diagram .head-footer {
+    border-top: none;
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 1.125rem;
+    font-weight: 400;
+    font-family: nyt-cheltenham-sh,georgia,times new roman,times,serif;
+    color: #666;
+    margin-bottom: 0;
+}
+.p-body-graphic {
+    margin: 0;
+    width: 1000px;
+}
+.p-bold {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: .05em;
+}
+.diagram ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1000px;
+    margin-top: -39vw;
+}
+.diagram ul li {
+    margin-bottom: 63px;
+    white-space: pre-wrap;
+}
+}
+.diagram div ul p {
+    font-family: nyt-franklin,arial,helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #000000;
+}
 
 
 /* header is being styled for this, watch that */
