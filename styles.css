@@ -467,7 +467,6 @@ margin-bottom: 0
     color: #000000;
 }
 
-
 /* header is being styled for this, watch that */
 .nav-elements-box {
     display: flex;
@@ -497,6 +496,74 @@ figure figcaption span:last-of-type {
     font-size: .85rem;
 }
 /* figcaption isnt quite set right */
+
+
+.bottom-of-article {
+    display: grid;
+    /* grid-template-columns: ; */
+    grid-template-rows: .3fr 1fr;
+    margin: 1rem 0 1.5rem}
+
+.boa-text {
+    display: block;
+    margin: 0px auto 1em;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(102, 102, 102);
+}
+.boa-text a {
+    color: rgb(102, 102, 102);
+  
+}
+
+.bottom-social-links {
+    display: grid;
+    grid-template-columns: 60% 15% 25%;
+    /* margin: 0; */
+    padding: 0;
+    margin: 1.5rem auto 2rem;
+}
+
+/* needs to be specfic to olny1st btn */
+.bottom-social-links button:first-of-type {
+    grid-column: 1/2;
+    width: 100%;
+    background-color: rgb(86, 123, 149);
+    color: white;
+    display: block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(50, 104, 145);
+    border-radius: 3px;
+    padding: 5px 0px;
+    transition: background-color 0.6s ease 0s;
+    text-transform: uppercase;
+}
+/* work on this */
+
+.bottom-social-links li:nth-of-type(2), .bottom-social-links li:nth-of-type(3), .bottom-social-links li:nth-of-type(4), .bottom-social-links li:nth-of-type(5) {
+    grid-column: 3/4;
+    grid-row: 1/1;
+}
+
+
+.only-social {
+    background: rgb(231, 231, 231);
+    display: flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 15px;
+    /* align-self: center; */
+    justify-content: center;
+    grid-column: 3/4;
+}
 
 
 
