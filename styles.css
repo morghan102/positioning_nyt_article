@@ -566,6 +566,23 @@ figure figcaption span:last-of-type {
 }
 
 
+.ad-box {
+    display: grid;
+    grid-template-areas:    "content content content aside"
+                            "content content content aside"
+                            "b-content b-content b-content aside";
+}
+.more-articles {
+    grid-area: content;
+}
+.most-pop-aside {
+    grid-area: aside;
+}
+.b-articles {
+    grid-area: b-content;
+}
+
+
 
 .nav-elements-box header {
     height: 44px;
