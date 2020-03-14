@@ -161,7 +161,7 @@ header {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 /* not the right size also  */
 .main-image {
@@ -566,20 +566,170 @@ figure figcaption span:last-of-type {
 }
 
 
-.ad-box {
+ .ad-box {
     display: grid;
-    grid-template-areas:    "content content content aside"
-                            "content content content aside"
-                            "b-content b-content b-content aside";
+    grid-template-areas:    "content aside"
+                            "content aside"
+                            "b-content aside";
+    grid-template-columns: minmax(800px, 2fr) minmax(300px, .75fr);
+    /* grid-template-columns: 800px 300px; */
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    overflow: hidden;
 }
+
 .more-articles {
     grid-area: content;
+    display: grid;
+    overflow: hidden;
+    /* grid-auto-columns: 1fr; */
+    /* grid-auto-flow: column; */
+    grid-template-columns: repeat(3, 275px);
+    grid-template-rows: repeat(2, auto);
+    max-width: 100%;
+    gap: 1rem;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
+    /* display: grid;
+    grid-template-areas:    "header"
+                            "content"
+                            "content";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1fr 1fr; 
+    i couldnt get this to work*/
 }
+
+ .sec-title {
+    grid-column: 1 / -1;
+    font-size: 1.6rem;
+    border-top: 1px solid rgb(0, 0, 0);
+    /* padding: 17px 20px 0px; */
+    margin-bottom: -1rem;
+}
+.sec-title h2 {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    /* font-size: 2rem; */
+    font-size: 1rem;
+    line-height: 1.25rem;
+    max-width: 851.25px;
+}
+.more-articles a {
+    text-decoration: none;
+    color: black;
+}
+.other-articles figure img {
+    width: 100%;
+}
+
+.other-articles {
+    /* grid-area: content; */
+    display: flex;
+    flex-direction: column;
+}
+/* .other-articles div:first-of-type {
+    min-width: 60px;
+} */
+.other-articles figure {
+    /* padding: 8px; */
+    margin: 0;
+}
+
+.other-articles figcaption {
+    font-family: nyt-cheltenham-small, georgia, "times new roman";
+    padding-bottom: 4px;
+    font-size: 0.625rem;
+    text-align: right;
+    padding-right: 5px;
+}
+.other-articles div:nth-child(2) {
+    /* padding-left: 20px; */
+    max-width: 275px;
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+    /* font-weight: 300; */
+    padding-right: 1rem;
+    min-width: 375px;
+    color: rgb(51, 51, 51);
+    font-size: .9rem;
+    line-height: 1.375rem;
+    text-align: left;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+.other-articles h3 {
+    color: rgb(18, 18, 18);
+    max-width: 275px;
+    margin: 0;
+    font-family: cheltenham;
+    font-weight: 600;
+}
+.other-articles div:nth-child(2) span {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.3px;
+    color: rgb(153, 153, 153);
+} 
+
+
+
 .most-pop-aside {
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(0, 0, 0);
 }
-.b-articles {
+.most-pop-aside h2 {
+    padding: 17px 0px 0px;
+    font-size: 1rem;
+}
+.link-box {
+    margin-top: 15px;
+    border-top: 1px solid rgb(226, 226, 226);
+    list-style: none;
+}
+.link-box h3 {
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 15px 0px;
+}
+.link-box h3 a {
+    color: rgb(18, 18, 18);
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    text-decoration: none;
+}
+
+
+
+
+
+.editors-picks {
     grid-area: b-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.editors-picks div:first-of-type {
+    grid-column: 1 / -1;
+}
+.editors-picks h2 {
+    border-top: 1px solid rgb(0, 0, 0);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    max-width: 851.25px;
+    padding: 17px 20px 0px;
+}
+.editors-picks div figure img {
+    width: 100%;
 }
 
 
@@ -593,7 +743,7 @@ figure figcaption span:last-of-type {
 }
 .nav-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     /* can set this to like repeat 1fr 6x */
     font-size: 14px;
 }
