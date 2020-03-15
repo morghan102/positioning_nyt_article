@@ -472,6 +472,7 @@ margin-bottom: 0
     display: flex;
     flex-direction: column;
     background: pink;
+    margin-top: 2rem;
 }
 figure {
     width: 100%;
@@ -618,7 +619,7 @@ figure figcaption span:last-of-type {
     line-height: 1.25rem;
     max-width: 851.25px;
 }
-.more-articles a {
+.more-articles a, .editors-picks a {
     text-decoration: none;
     color: black;
 }
@@ -652,7 +653,7 @@ figure figcaption span:last-of-type {
     font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
     /* font-weight: 300; */
     padding-right: 1rem;
-    min-width: 375px;
+    /* min-width: 375px; */
     color: rgb(51, 51, 51);
     font-size: .9rem;
     line-height: 1.375rem;
@@ -683,6 +684,12 @@ figure figcaption span:last-of-type {
     display: flex;
     flex-direction: column;
     border-top: 1px solid rgb(0, 0, 0);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    padding-bottom: 15px;
+    /* border-top: 1px solid rgb(0, 0, 0); */
 }
 .most-pop-aside h2 {
     padding: 17px 0px 0px;
@@ -714,12 +721,13 @@ figure figcaption span:last-of-type {
     grid-area: b-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+    overflow: hidden;
 }
-.editors-picks div:first-of-type {
+/* .editors-picks div:first-of-type {
     grid-column: 1 / -1;
-}
-.editors-picks h2 {
+} */
+/* .editors-picks h2 {
     border-top: 1px solid rgb(0, 0, 0);
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     font-weight: 700;
@@ -727,10 +735,10 @@ figure figcaption span:last-of-type {
     line-height: 1.25rem;
     max-width: 851.25px;
     padding: 17px 20px 0px;
-}
-.editors-picks div figure img {
+} */
+/* .editors-picks div figure img {
     width: 100%;
-}
+} */
 
 
 
