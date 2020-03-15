@@ -639,7 +639,6 @@ figure figcaption span:last-of-type {
     /* padding: 8px; */
     margin: 0;
 }
-
 .other-articles figcaption {
     font-family: nyt-cheltenham-small, georgia, "times new roman";
     padding-bottom: 4px;
@@ -692,7 +691,7 @@ figure figcaption span:last-of-type {
     /* border-top: 1px solid rgb(0, 0, 0); */
 }
 .most-pop-aside h2 {
-    padding: 17px 0px 0px;
+    /* padding: 17px 0px 0px; */
     font-size: 1rem;
 }
 .link-box {
@@ -703,6 +702,7 @@ figure figcaption span:last-of-type {
 .link-box h3 {
     border-bottom: 1px solid rgb(226, 226, 226);
     padding: 15px 0px;
+    margin: 0;
 }
 .link-box h3 a {
     color: rgb(18, 18, 18);
@@ -793,3 +793,5 @@ footer {
     /* this isnt working */
     /* !!!!!!!! */
 }
+
+/* set the hover to the links */
