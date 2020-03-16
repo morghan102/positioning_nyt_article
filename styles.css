@@ -467,13 +467,6 @@ margin-bottom: 0
     color: #000000;
 }
 
-/* header is being styled for this, watch that */
-.nav-elements-box {
-    display: flex;
-    flex-direction: column;
-    background: pink;
-    margin-top: 2rem;
-}
 figure {
     width: 100%;
     margin: 0;
@@ -741,13 +734,51 @@ figure figcaption span:last-of-type {
 } */
 
 
-
+.nav-elements-box::before {
+    border-top: 1px solid #e2e2e2;
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 0;
+}
+/* header is being styled for this, watch that */
+.nav-elements-box {
+    display: flex;
+    flex-direction: column;
+    /* background: pink; */
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 1200px;
+    /* padding: 0 3% 9px; */
+}
 .nav-elements-box header {
     height: 44px;
-    justify-content: center;
-    align-content: center;
-    width: 184px;
+    width: 100%;
     background: none;
+    display: flex;
+    flex-direction: row;
+}
+.nav-elements-box header svg {
+    width: 100%;
+    justify-self: start;
+    margin-top: .75rem;
+}
+.nav-elements-box header a {
+    text-decoration: none;
+    justify-self: end;
+    width: 7rem;
+    margin: 18px 0 0 auto;
+    color: #567b95;
+    font-family: nyt-franklin;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+}
+.nav-content a {
+    text-decoration: none;
+    color: #000;
 }
 .nav-content {
     display: grid;
@@ -766,11 +797,59 @@ figure figcaption span:last-of-type {
     line-height: 15px;
     width: 150px;
 }
-.nav-content li {
+.nav-content ul {
+    padding: 0;
+}
+.nav-content ul li {
     font-family: nyt-franklin;
     font-weight: 500;
     height: 23px;
     line-height: 16px;
+}
+.nav-content a {
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+}
+.nav-content div:last-of-type {
+    border-left: 1px solid #e2e2e2;
+    padding-left: 15px;
+}
+.line-abv-item {
+    border-top: 1px solid #e2e2e2;
+    margin-top: 2px;
+    padding-top: 10px;
+}
+.logo-links {
+    margin-bottom: 10px;
+}
+.logo-links li {
+    margin-bottom: 5px;
+}
+.logo-links li a {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 25px;
+    line-height: 15px;
+}
+.link-logos {
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.smaller-links li a {
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 11px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 21px;
 }
 
 footer {
