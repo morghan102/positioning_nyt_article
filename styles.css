@@ -852,25 +852,80 @@ figure figcaption span:last-of-type {
     line-height: 21px;
 }
 
-footer {
+
+
+/* footer {
     display: flex;
     flex-direction: row;
-}
+} */
 .footer-box {
+    border-top: 1px solid #ebebeb;
+    padding-top: 9px;
+    margin-left: 3rem;
+    margin-right: 3rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding-bottom: 45px;
 }
 .footer-box ul {
     display: flex;
+    flex-direction: row;
+    justify-content: end;
     font-size: 11px;
+    /* margin-left: 95px; */
 }
 
 .footer-box a {
-    justify-self: center;
+    margin-right: 10px;
+    color: #666;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    text-decoration: none;
+}
+
+
+
+.sticky-bar {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 17px;
+    opacity: 1;
+    animation: 0.5s ease 0s 1 normal none running animation-mhvv8m;
+    height: 220px;
+    bottom: -200px;
+    position: fixed;
+    height: 235px;
+    z-index: 1000000101;
+    /* bottom: -236px; */
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* will-change: transform; */
+    border-top: 1px solid rgb(51, 51, 51);
+    outline: aliceblue;
+    /* transition: transform 200ms ease-out 0s; */
+}
+.sticky-bar p {
+    height: 55px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: nyt-franklin;
+    letter-spacing: 0.24px;
+    /* justify-self: end; this doesnt work*/
+}
+.sticky-bar button {
+    display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
-    justify-items: center;
-    /* this isnt working */
-    /* !!!!!!!! */
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+    outline: aliceblue;
 }
 
 /* set the hover to the links */
