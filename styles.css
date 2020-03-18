@@ -884,19 +884,19 @@ figure figcaption span:last-of-type {
 }
 
 
-
+/* bar isnt quite long enough */
 .sticky-bar {
     display: flex;
     flex-direction: row;
     font-size: 15px;
     line-height: 17px;
     opacity: 1;
-    animation: 0.5s ease 0s 1 normal none running animation-mhvv8m;
+    /* animation: 0.5s ease 0s 1 normal none running animation-mhvv8m; */
     height: 220px;
     bottom: -200px;
     position: fixed;
-    height: 235px;
-    z-index: 1000000101;
+    height: 250px;
+    /* z-index: 1000000101; */
     /* bottom: -236px; */
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -904,8 +904,23 @@ figure figcaption span:last-of-type {
     border-top: 1px solid rgb(51, 51, 51);
     outline: aliceblue;
     /* transition: transform 200ms ease-out 0s; */
+    justify-content: center;
+}
+.sticky-bar div {
+    /* width: 100%; */
+}
+.sb-1 {
+    margin-top: .6rem;
+    position: absolute;
+}
+.sb-2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding-left: 60rem;
 }
 .sticky-bar p {
+    width: 100%;
     height: 55px;
     cursor: pointer;
     font-size: 12px;
@@ -913,19 +928,21 @@ figure figcaption span:last-of-type {
     font-weight: 700;
     font-family: nyt-franklin;
     letter-spacing: 0.24px;
-    /* justify-self: end; this doesnt work*/
 }
 .sticky-bar button {
     display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
+    /* -webkit-box-pack: center; */
+    /* -webkit-box-align: center; */
     background-color: transparent;
     width: 55px;
     height: 55px;
-    z-index: 1;
-    outline: aliceblue;
+    /* z-index: 1; */
+    outline: none;
+    border: none;
+    /* align-self: start; */
+    padding-bottom: 15px;
+    cursor: pointer;
+
 }
 
 /* set the hover to the links */
