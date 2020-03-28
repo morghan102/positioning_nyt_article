@@ -353,12 +353,13 @@ li {
     flex-direction: column;
 }
 .article-body p {
-    margin-bottom: 0.78125rem;
+    margin-bottom: 1rem;
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
     font-size: 20px;
     line-height: 1.5625rem; 
     margin-top: 0;
 }
+
 
 
 
@@ -398,24 +399,17 @@ margin-bottom: 0
     margin-left: -290px;
 } */
 
+
+/* captions for the main figure/img */
 .diagram {
     display: flex;
     flex-direction: column;
-    width: .75vw;
-    position: absolute;
-    height: 754px;
-    margin-top: 1620px;
-    margin-left: -200px;
-}
-.diagram div ul {
-    display: grid;
-    grid-template-columns: repeat(4, 228px);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 79px;
-    grid-row-gap: 100px;
+    /* width: .75vw; */
     position: relative;
-    margin-top: -46.5%;
-    padding: 0;
+    /* height: 754px; */
+    /* margin-top: 305vw; */
+    margin-left: -200px;
+    margin-bottom: 2em;
 }
 .diagram header {
     width: 1000px;
@@ -447,18 +441,31 @@ margin-bottom: 0
     font-weight: bold;
     letter-spacing: .05em;
 }
-.diagram ul {
+.diagram div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 238px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 163px;
+    position: relative;
+    margin-top: -56.5%;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* .diagram ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 1000px;
     margin-top: -39vw;
-}
+} */
 .diagram ul li {
-    margin-bottom: 63px;
+    /* margin-bottom: 63px; */
     white-space: pre-wrap;
+    height: 140px
 }
-}
+
 .diagram div ul p {
     font-family: nyt-franklin,arial,helvetica,sans-serif;
     font-size: 14px;
@@ -466,8 +473,30 @@ margin-bottom: 0
     font-weight: 300;
     color: #000000;
 }
+footer {
+    margin-top: 24px;
+}
+hr {
+    width: 10%;
+    margin-left: 0;
+    color: #000;
+    margin-bottom: 20px;
+}
+.dia-footer p {
+    font-family: nyt-franklin,arial,helvetica,sans-serif;
+    color: #333;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+}
+
+
 
 figure {
+    position: absolute;
+    /* margin-top: 1620px;
+    margin-left: -200px; */
+
     width: 100%;
     margin: 0;
     margin-bottom: 43px;
