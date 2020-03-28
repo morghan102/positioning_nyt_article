@@ -574,7 +574,6 @@ footer {
     margin: 1.5rem auto 2rem;
 }
 
-/* needs to be specfic to olny1st btn */
 .bottom-social-links .read-comm-btn {
     grid-column: 1/2;
     width: 100%;
@@ -613,7 +612,6 @@ footer {
     height: 28px;
     border-radius: 50%;
     margin-right: 15px;
-    /* align-content: center; */
     justify-content: center;
     grid-column: 3/4;
 }
@@ -635,7 +633,6 @@ footer {
     background: none;
     border: none;
 }
-
 
  .ad-box {
     display: grid;
@@ -1019,7 +1016,28 @@ footer {
     /* align-self: start; */
     padding-bottom: 15px;
     cursor: pointer;
-
 }
 
-/* set the hover to the links */
+button {
+    cursor: pointer;   
+}
+
+
+
+.top-article-info div:first-of-type a:hover, .article-body p a:hover, .boa-text a:hover {
+    text-decoration: none;
+}
+.read-comm-btn:hover, .header-buttons button:hover {
+    background-color: rgb(50, 104, 145);
+}
+.only-social-box svg:hover, .social-links li:hover {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/* the last 2 btns in top social links aren't hovering right */
+.other-articles h3:hover, .link-box h3 a:hover {
+    color: rgb(102, 102, 102);
+}
+.sec-title:hover, .nav-content a:hover, .footer-box a:hover, .space-link:hover {
+    text-decoration: underline;
+}
